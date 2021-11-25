@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input id="result" class="textview"><br>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" onclick="clearBox()" value="c"></td>
+                    <td><input class="button" type="button" onclick="back()"  value="<"></td>
+                    <td><input class="button" type="button" onclick="displayValue('/')"  value="/"></td>
+                    <td><input class="button" type="button" onclick="displayValue('*')"  value="*"></td>
+                </tr>  
+                <tr>
+                    <td><input class="button" type="button" onclick="displayValue('7')"  value="7"></td>
+                    <td><input class="button" type="button" onclick="displayValue('8')"  value="8"></td>
+                    <td><input class="button" type="button" onclick="displayValue('9')"  value="9"></td>
+                    <td><input class="button" type="button" onclick="displayValue('-')"  value="-"></td>
+                </tr>   
+                <tr>
+                    <td><input class="button" type="button" onclick="displayValue('4')" value="4"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('5')" value="5"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('6')" value="6"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('+')" value="+"></td>
+                </tr>  
+                <tr>
+                    <td><input class="button"  type="button" onclick="displayValue('1')" value="1"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('2')" value="2"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('3')" value="3"></td>
+                    <td rowspan="5"><input class="button" onclick="operationB()"  type="button" style="height: 107px;" value="="></td>
+                </tr>   
+                <tr>
+                    <td colspan="2"><input class="button" onclick="displayValue('0')" style="width:105px" type="button" value="0"></td>
+                    <td><input class="button"  type="button" onclick="displayValue('.')" value="."></td>
+                </tr>                       
+            </table>
+        </form>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
